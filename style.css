@@ -6,7 +6,7 @@ body {
     line-height: 30px;
     display: block;
     /* font-family: "Century Gothic"; */
-    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic;
     text-align: center;
 }
 
@@ -60,7 +60,6 @@ h4 a:hover {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     -moz-background-clip: padding;
-    -webkit-transform: translateZ(0);
 }
 
 .coverArt {
@@ -167,17 +166,17 @@ h4 a:hover {
 .card {
     text-decoration: none;
     position: relative;
-    -ms-flex: 50%; /* IE10 */
-    flex: 50%;
-    max-width: 50%;
+    -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+    max-width: 33.33%;
 }
 
 .item {
     text-decoration: none;
     position: relative;
-    -ms-flex: 50%; /* IE10 */
-    flex: 50%;
-    max-width: 50%;
+    -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+    max-width: 33.33%;
 }
 
 .content {
@@ -439,15 +438,15 @@ h4 a:hover {
 
 @media screen and (max-width: 1200px) {
     .card {
-        -ms-flex: 100%; /* IE10 */
-        flex: 100%;
-        max-width: 100%;
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+        max-width: 50%;
     }
     
     .item {
-        -ms-flex: 100%; /* IE10 */
-        flex: 100%;
-        max-width: 100%;
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+        max-width: 50%;
     }
 }
 
