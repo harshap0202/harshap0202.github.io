@@ -426,21 +426,21 @@ h4 a:hover {
 .skills-grid {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
-    gap: 10px; /* Adjust the gap as needed */
+    grid-template-columns: repeat(5, 1fr); /* 4 columns with equal width */
     text-align: left;
-    padding-left: 13%;
 }
 
-/* .right-aligned {
-    text-align: right;
-    padding-right: 100px;
+.skill {
+    padding-top: 15px; /* Adjust the gap as needed */
+    padding-bottom: 15px; /* Adjust the gap as needed */
+    padding-left: 50px;
+    transition: all 0.5s ease;
 }
 
-.left-aligned {
-    text-align: left;
-    padding-left: 100px;
-} */
+.skill:hover {
+    font-size: larger;
+    color: #5046e5;
+}
 
 @media screen and (max-width: 1200px) {
     .card {
