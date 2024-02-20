@@ -166,9 +166,15 @@ h4 a:hover {
 .card {
     text-decoration: none;
     position: relative;
-    -ms-flex: 33.33%; /* IE10 */
-    flex: 33.33%;
-    max-width: 33.33%;
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    flex: 34%;
+    max-width: 34%;
 }
 
 .item {
