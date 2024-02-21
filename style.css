@@ -205,9 +205,9 @@ h2:hover {
 .item {
     text-decoration: none;
     position: relative;
-    -ms-flex: 33.33%;
-    flex: 33.33%;
-    max-width: 33.33%;
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
 }
 
 .content {
@@ -459,27 +459,31 @@ h2:hover {
 
 @media screen and (max-width: 1200px) {
     .card {
-        -ms-flex: 50%;
+        -ms-flex: 49%;
+        flex: 49%;
+        max-width: 49%;
+    }
+
+    .card:hover {
         flex: 50%;
         max-width: 50%;
     }
 
     .item {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
+        -ms-flex: 49%;
+        flex: 49%;
+        max-width: 49%;
     }
 }
 
 @media screen and (max-width: 900px) {
     .card {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
+        -ms-flex: 99%;
+        flex: 99%;
+        max-width: 99%;
     }
 
-    .item {
-        -ms-flex: 100%;
+    .card:hover {
         flex: 100%;
         max-width: 100%;
     }
@@ -491,15 +495,20 @@ h2:hover {
 
 @media screen and (max-width: 600px) {
     .card {
-        -ms-flex: 100%;
+        -ms-flex: 99%;
+        flex: 99%;
+        max-width: 99%;
+    }
+
+    .card:hover {
         flex: 100%;
         max-width: 100%;
     }
 
     .item {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
+        -ms-flex: 99%;
+        flex: 99%;
+        max-width: 99%;
     }
 
     .skills-grid {
