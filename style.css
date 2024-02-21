@@ -1,7 +1,7 @@
 body {
+    color: #eee;
+    background-color: #050505;
     height: 100%;
-    color: #252525;
-    background-color: #eee;
     margin: 0px;
     line-height: 30px;
     display: block;
@@ -16,7 +16,7 @@ a {
 }
 
 p {
-    color: rgb(36,36,38);
+    color: rgb(36, 36, 38);
     font-size: 1.125em;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -30,7 +30,8 @@ p a:hover {
     text-decoration: underline;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-size: 3em;
     margin-bottom: 0px;
     margin-top: 50px;
@@ -40,7 +41,7 @@ h1, h2 {
 
 h3 {
     font-size: 2em;
-    margin-bottom:25px;
+    margin-bottom: 25px;
     margin-top: 30px;
 }
 
@@ -53,6 +54,30 @@ h4 {
 h4 a:hover {
     color: #48D;
     text-decoration: underline;
+}
+
+ h1 {
+    transition: all 0.2s ease;
+}
+
+h1:hover {
+    letter-spacing: 2px;
+}
+
+h2 {
+    transition: all 0.2s ease;
+}
+
+h2:hover {
+    letter-spacing: 2px;
+}
+
+.hero-text p {
+    transition: all 0.2s ease;
+}
+
+.hero-text p:hover {
+    letter-spacing: 2px;
 }
 
 .rounded {
@@ -136,13 +161,13 @@ h4 a:hover {
     text-align: center;
     color: #838383;
     font-size: 1em;
-    background-color: rgb(195,195,200);
+    background-color: rgb(195, 195, 200);
 }
 
 .textBubbleDiv {
-    background-color: rgb(225,225,230);
+    background-color: rgb(225, 225, 230);
     text-align: center;
-    max-width:  280px;
+    max-width: 280px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -156,9 +181,9 @@ h4 a:hover {
 }
 
 .grid {
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     max-width: 1600px;
 }
@@ -166,7 +191,7 @@ h4 a:hover {
 .card {
     text-decoration: none;
     position: relative;
-    -ms-flex: 33%; /* IE10 */
+    -ms-flex: 33%;
     flex: 33%;
     max-width: 33%;
     transition: all 0.2s ease;
@@ -180,14 +205,26 @@ h4 a:hover {
 .item {
     text-decoration: none;
     position: relative;
-    -ms-flex: 33.33%; /* IE10 */
+    -ms-flex: 33.33%;
     flex: 33.33%;
     max-width: 33.33%;
 }
 
 .content {
+    border-radius: 30px;
     margin-left: 10px;
     margin-right: 10px;
+    transition: all 0.2s ease;
+}
+
+.content-body a {
+    text-decoration: none; 
+    color: white;
+}
+
+.content:hover {
+    box-shadow: 0 0 5px #4f46e5;
+
 }
 
 .card-body a:hover {
@@ -255,29 +292,6 @@ h4 a:hover {
     padding-bottom: 20px;
 }
 
-.contact {
-    background-color: rgb(225,225,230);
-    padding: 25px;
-    margin: auto;
-}
-
-.contact-body {
-    max-width: 1600px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contact h2 {
-    font-size: 3em;
-    max-width: 1600px;
-    text-align: left;
-    margin-bottom: 0px;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    line-height: 40px;
-}
-
 .card img {
     color: white;
     text-align: center;
@@ -321,7 +335,7 @@ h4 a:hover {
 }
 
 .card-body {
-    background-color: white;
+    background-color: rgb(36, 36, 38);
     height: auto;
     display: block;
     margin-left: 0px;
@@ -357,7 +371,7 @@ h4 a:hover {
 
 .topnav {
     overflow: hidden;
-    background-color: rgb(50,50,50);
+    background-color: rgb(50, 50, 50);
 }
 
 .topnav a {
@@ -371,7 +385,8 @@ h4 a:hover {
 }
 
 .topnav a:hover {
-    background-color: rgb(142,142,147);;
+    background-color: rgb(142, 142, 147);
+    ;
 }
 
 .topnav .icon {
@@ -400,7 +415,7 @@ h4 a:hover {
 
 .topnav.responsive {
     position: relative;
-    
+
 }
 
 .topnav.responsive .icon {
@@ -426,13 +441,13 @@ h4 a:hover {
 .skills-grid {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 4 columns with equal width */
+    grid-template-columns: repeat(5, 1fr);
     text-align: left;
 }
 
 .skill {
-    padding-top: 15px; /* Adjust the gap as needed */
-    padding-bottom: 15px; /* Adjust the gap as needed */
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 50px;
     transition: all 0.5s ease;
 }
@@ -444,13 +459,13 @@ h4 a:hover {
 
 @media screen and (max-width: 1200px) {
     .card {
-        -ms-flex: 50%; /* IE10 */
+        -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
     }
-    
+
     .item {
-        -ms-flex: 50%; /* IE10 */
+        -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
     }
@@ -458,80 +473,73 @@ h4 a:hover {
 
 @media screen and (max-width: 900px) {
     .card {
-        -ms-flex: 100%; /* IE10 */
+        -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
-    
+
     .item {
-        -ms-flex: 100%; /* IE10 */
+        -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
 
     .skills-grid {
-        grid-template-columns: repeat(3, 1fr); /* 4 columns with equal width */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (max-width: 600px) {
     .card {
-        -ms-flex: 100%; /* IE10 */
+        -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
-    
+
     .item {
-        -ms-flex: 100%; /* IE10 */
+        -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
-    
+
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr); /* 4 columns with equal width */
+        grid-template-columns: repeat(2, 1fr);
         padding-left: 15%;
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        color: #eee;
-        background-color: #050505;
-    }
-    
+
     p {
         color: #eee;
     }
-    
+
     .subtitle {
-        color: rgb(174,174,178);
+        color: rgb(174, 174, 178);
     }
-    
+
     .subtle {
         color: #777;
-        background-color: rgb(36,36,38);
+        background-color: rgb(36, 36, 38);
     }
-    
+
     .title {
         color: white;
     }
+
     .description {
-        color: rgb(174,174,178);
+        color: rgb(174, 174, 178);
     }
-    
-    .card-body {
-        background-color: rgb(36,36,38);
-    }
-    
+
     .contact {
-        background-color: rgb(50,50,50);
+        background-color: rgb(50, 50, 50);
     }
-    
+
     .textBubbleDiv {
-        background-color: rgb(50,50,50);
+        background-color: rgb(50, 50, 50);
     }
-    
+
     .topnav {
-        background-color: rgb(50,50,50);
+        background-color: rgb(50, 50, 50);
     }
 }
